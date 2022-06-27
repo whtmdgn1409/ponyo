@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Podkova:wght@700&display=swap');
+
+* {
+    width:1080px;
+    height:1920px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Podkova', serif; */
+    /* font-family: 'Podkova', serif;     */
+    background-color: #F7F7F7;
+}
+
+body {
+    position: relative;
+}
+p1 {
+    z-index:5;
+    position: absolute;
+    width: 874px;
+    height:88px;
+    left: 103px;
+    top:435px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* basic/1100 */
+
+    color: #000000;
+
+}
+.logo {
+    position: absolute;
+    top: -150px;
+    left: 250px;
+}
+
+.logo img {
+    width: 467px;
+
+}
+.people {
+    position: absolute;
+    width: 874px;
+    height:88px;
+    left: 103px;
+    top:1155px;
+}
+
+
+
+p2 {
+    position: absolute;
+    top: 1310px;
+    font-family: 'Poppins';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+span {
+    color: #3E3B98;
+    font-weight: 900;
+}
+
+div {
+    position: absolute;
+    width: 592px;
+    height: 110px;
+    top: 936px;
+    left: 244px;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 88px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin: 0 auto;
+    /* basic/1100 */
+
+    color: #000000;
+
+}

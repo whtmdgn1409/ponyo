@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Podkova', serif;
+}
+
+* {
+    /* 드래그나 더블클릭 시에 텍스트가 선택이 되지 않도록 설정 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* 너비 등의 레이아웃에 관여하지 않는 테두리 제거 */
+    outline: 0;
+    /* 마진 패딩 제거*/
+    margin: 0;
+    padding: 0;
+    /* IOS 웹킷에서 터치 시에 등장하는 하이라이트를 제거하기 위함 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 
+html {
+
+} */
+body {
+    margin:0;
+    padding:0;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.pmain_text {
+    top: 475px;
+    position:relative;
+    height: 450px;
+    z-index: 3;
+}
+.plop-logo {
+    position: relative;
+    margin: 0 auto;
+    /* left:10px; */
+    width: 741px;
+}
+.plop-logo img{
+    width: 741px;
+}
+.logo-text {
+    position: relative;
+    height: 72px;
+    top: 50px;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 48px;
+/* identical to box height */
+    text-align: center;
+/* basic/100 */
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.pmain_img {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+.backimg {
+    display : block;
+    position : fixed;
+    bottom: 0;
+    width: 100%;
+}
+.pmain_touch {
+    position : absolute;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+.touch-btn {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    top: 960px;
+    margin:0 auto;
+}
+.touch-text {
+    position: relative;
+    top: 1000px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 48px;
+/* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+canvas {
+    position: absolute;
+    top : 0px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 2.5s;
+    transition-timing-function: linear;
+    z-index: 2;
+}
+
+
+
+/* 색상선택바 */
+
+.second {
+    position : absolute;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1c1c;
+    margin: 0;
+    border: 0;
+}
+
+.animation08 {
+    margin: 0;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    top: -100%;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.ani-text {
+    display: block;
+    position: absolute;
+    font-family: 'Poppins';
+    top: 740px;
+    font-size: 48px;
+    text-align: center;
+    /* basic/100 */
+    color: #FFFFFF;
+    z-index: 1;
+    width: 100%;
+}
+
+.animation08 div:nth-of-type(1) {
+    width: 100%;
+    height: 7.14%;
+    background: #ffffff;
+    animation-name: div1;
+    animation-duration: 0.8s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+}
+
+.animation08 div:nth-of-type(2) {
+    width: 100%;
+    height: 7.14%;
+    background: #3c3c3c3c;
+    animation-name: div2;
+    animation-duration: 0.8s;
+    animation-delay: 4.1s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+}
+
+.animation08 div:nth-of-type(3) {
+    width: 100%;
+    height: 7.14%;
+    background: #52306C;
+    animation-name: div3;
+    animation-duration: 0.8s;
+    animation-delay: 3.7s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+}
+
+.animation08 div:nth-of-type(4) {
+    width: 100%;
+    height: 7.14%;
+    background: #0046A2;
+    animation-name: div4;
+    animation-duration: 0.8s;
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+
+}
+.animation08 div:nth-of-type(5) {
+    width: 100%;
+    height: 7.14%;
+    background: #026745;
+    animation-name: div5;
+    animation-duration: 0.8s;
+    animation-delay: 2.9s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+
+}
+.animation08 div:nth-of-type(6) {
+    width: 100%;
+    height: 7.14%;
+    background: #F5AC05;
+    animation-name: div6;
+    animation-duration: 0.8s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+
+}
+.animation08 div:nth-of-type(7) {
+    width: 100%;
+    height: 7.14%;
+    background: #DC0101;
+    animation-name: div7;
+    animation-duration: 0.8s;
+    animation-delay:2.1s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out;
+
+}
+/* @keyframes animation08 {
+    0% {
+        transform: translateY(-200vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+@keyframes div1 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+@keyframes div2 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+@keyframes div3 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+@keyframes div4 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+@keyframes div5 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+@keyframes div6 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+@keyframes div7 {
+    0%{
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(1920px);
+    }
+}
+.musicbarbody {
+    position:relative;
+    width:1080px;
+    height:1920px;
+    z-index:6;
+    display:block;
+}
+.music {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top:750px;
+    left:390px;
+    width: 300px;
+    height: 200px;
+}
+  
+.music .bar {
+    width: 36px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: white;
+    animation: up_down 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes up_down {
+    0%,
+    100% {
+      height: 6px;
+    }
+    50% {
+      height: 120px;
+    }
+  }
+  
+  .music .bar:nth-child(1) {
+    background-color: purple;
+    animation-delay: 1s;
+  }
+  
+  .music .bar:nth-child(2) {
+    background-color: crimson;
+    animation-delay: 0.8s;
+  }
+  
+  .music .bar:nth-child(3) {
+    background-color: deeppink;
+    animation-delay: 0.6s;
+  }
+  
+  .music .bar:nth-child(4) {
+    background-color: orange;
+    animation-delay: 0.4s;
+  }
+  
+  .music .bar:nth-child(5) {
+    background-color: gold;
+    animation-delay: 0.2s;
+  }
+  
+  .music .bar:nth-child(6) {
+    background-color: gold;
+    animation-delay: 0.2s;
+  }
+  
+  .music .bar:nth-child(7) {
+    background-color: orange;
+    animation-delay: 0.4s;
+  }
+  
+  .music .bar:nth-child(8) {
+    background-color: deeppink;
+    animation-delay: 0.6s;
+  }
+  
+  .music .bar:nth-child(9) {
+    background-color: crimson;
+    animation-delay: 0.8s;
+  }
+  
+  .music .bar:nth-child(10) {
+    background-color: purple;
+    animation-delay: 1s;
+  }
+.music-text {
+    position: relative;
+
+    top: 980px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    /* basic/100 */    
+    color: #FFFFFF;
+    text-align: center;
+  }

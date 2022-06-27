@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Podkova:wght@700&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Podkova', serif;
+}
+
+.wrap {
+    padding: 0px;
+}
+
+.pop_wrap {
+    z-index: 9000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    font-size: 0;
+    text-align: center;
+}
+
+.pop_wrap:after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+.pop_wrap .pop_inner {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    width: 880px;
+    height: 1012px;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+
+.pop_pli_cover {
+    top: 94px;
+    position: relative;
+    width: 740px;
+    height: 412px;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pop_pli_cover img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.pli_title {
+    position: relative;
+    top: 145px;
+    left: 70px;
+    text-align: left;
+    font-size: 34px;
+    color: black;
+    font-weight: 700;
+}
+
+.pli_text {
+    position: relative;
+    top: 165px;
+    left: 70px;
+    letter-spacing: -0.02em;
+    line-height: 39px;
+    color: #303030;
+    font-size: 26px;
+    text-align: left;
+}
+
+.pop_wrap .pop_inner .pop_footer {
+    position: absolute;
+    bottom: 70px;
+    height: 92px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn_close {
+    position: relative;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #EEE;
+    border-radius: 50px;
+    line-height: 80px;
+    background-color: #EEE;
+    color: #636363;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    right: 15px;
+
+}
+
+.select_button {
+    position: relative;
+    width: 500px;
+    height: 92px;
+    border: 1px solid #3E3B98;
+    border-radius: 50px;
+    background-color: #3E3B98;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    left: 15px;
+}

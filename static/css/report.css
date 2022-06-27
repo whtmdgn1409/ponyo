@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    max-width: 190px;
+    height: 287px;
+    max-height: 287px;
+    position: relative;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    width: 68px;
+    height: 17px;
+    left: 15px;
+    top: 19px;
+}
+
+.sidebar {
+    z-index: 2;
+    position: absolute;
+    width: 29px;
+    height: 287px;
+    left: 161px;
+
+
+
+    /* basic/900 */
+
+    background: #000000;
+}
+
+.sidebar-text {
+    position: absolute;
+    z-index: 999;
+    top: 98px;
+    left:90px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 132.5%;
+    /* or 13px */
+    white-space: nowrap;
+    
+    /* basic/100 */
+    
+    color: #FFF;
+    
+    transform: rotate(90deg);
+}
+
+.QR {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    left: 41px;
+    top: 49px;
+}
+
+.QR_p {
+    position: absolute;
+    top: 136px;
+    left: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 132.5%;
+    /* or 13px */
+    align-items: center;
+    text-align: center;
+
+    /* basic/1100 */
+
+    color: #000000;
+}
+
+.Arrival {
+    position: absolute;
+    left: 9px;
+    top: 167px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 132.5%;
+    color: #000000;
+}
+
+.Arrival-text {
+    position: absolute;
+    left: 9px;
+    top: 180px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 12px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.Date {
+    position: absolute;
+    left: 77px;
+    top: 205px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 132.5%;
+    /* or 13px */
+
+
+    /* basic/800 */
+
+    color: #000000;
+}
+
+.Date-text {
+    position: absolute;
+    left: 77px;
+    top: 217px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 132.5%;
+    /* or 11px */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.Terminal {
+    position: absolute;
+    left: 9px;
+    top: 205px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 132.5%;
+    /* or 13px *
+    /* basic/800 */
+
+    color: #000000;
+}
+
+.Terminal-text {
+    position: absolute;
+    left: 9px;
+    top: 217px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 132.5%;
+    /* or 11px */
+
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.Option {
+    position: absolute;
+    left: 9px;
+    top: 242px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 132.5%;
+    /* or 13px */
+
+
+    /* basic/800 */
+
+    color: #000000;
+}
+
+.Option-text {
+    position: absolute;
+    left: 9px;
+    top: 255px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 132.5%;
+    /* or 11px */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
