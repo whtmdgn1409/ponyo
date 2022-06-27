@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/order.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body style="overflow: hidden;">
+    <audio id="aud" autoplay src="../static/sound/남자목소리1.mp3" type="audio/mpeg" display="none"> 브라우저가 audio
+        태그를 지원하지 않을 때 표시되는 문장 </audio>
+    <p1>주문이 완료되었습니다</p1>
+    <div class = "logo"><img src="../static/img/심볼형 LOGO1.svg" alt=""></div>
+    <div class="people">{{ cnt }}</div>
+    <p2>당신이 <span>몰입하고 싶은 순간</span>이 주문되었어요! <br>영수증의 <span>QR코드</span>를 인식해 그 순간으로 <span>퐁당</span>해보세요!</p2>
+    <script src="../static/js/ordercheck.js"></script>
+    <script>
+        document.getElementById('aud').play();
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>PLOP</title>
+    <!-- sound -->
+    <audio id='audio_play' src='../static/sound/ES_Drop Single Drip 1 - SFX Producer.mp3'></audio>
+    <audio id='audio_play2' src='../static/sound/brickHit.mp3'></audio>
+    <script type="text/javascript">
+        function play() {
+            var audio = document.getElementById('audio_play');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0
+            }
+        }
+        function play2() {
+            var audio2 = document.getElementById('audio_play2');
+            setTimeout(function(){audio2.play()}, 5630);
+            setTimeout(function(){audio2.play()}, 6070);
+            setTimeout(function(){audio2.play()}, 6510);
+            setTimeout(function(){audio2.play()}, 6950);
+            setTimeout(function(){audio2.play()}, 7390);
+            setTimeout(function(){audio2.play()}, 7830);
+            setTimeout(function(){audio2.play()}, 8270);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="first" onclick="play(); play2()" style="display: block;">
+        <div class="pmain_text">
+            <div class="plop-logo"><img src="../static/img/텍스트형 LOGO2.svg" alt=""></div>
+            <div class="logo-text">Travel into your daily life</div>
+        </div>
+        <div class="pmain_img">
+            <img class="backimg" src="../static/img/background.png" alt="">
+        </div>
+        <div class="pmain_touch">
+            <div class="touch-btn"><img src="../static/img/touchButton.svg" alt=""></div>
+            <div class="touch-text">화면을 터치해 주문을 시작하세요</div>
+        </div>
+        <canvas class="wavecanvas"></canvas>
+    </section>
+    <section class="second" style="display: none;">
+        <p class="ani-text">색상을 선택해<br>지금 당신에게 딱 맞는 추천 메뉴를<br>확인해보세요!</p>
+        <div class="animation08">
+            <div class="colorbar white" id="white"></div>
+            <div class="colorbar black" id="black"></div>
+            <div class="colorbar purple" id="purple"></div>
+            <div class="colorbar blue" id="blue"></div>
+            <div class="colorbar green" id="green"></div>
+            <div class="colorbar yellow" id="yellow"></div>
+            <div class="colorbar red" id="red"></div>
+        </div>
+        <div class="musicbarbody" style="display:none;">
+            <div class='music'>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
+            </div>
+            <div class="music-text" display="inline" style="white-space:nowrap;"><b><span
+                        class="music-text-prepend"></span></b> 을 고른 당신을 위해<br>메뉴가 구성되고 있어요</div>
+        </div>
+    </section>
+    <script type="module" , src="../static/js/main_backwave.js"></script>
+    <script src="../static/js/main_colorbar.js"></script>
+    <script src="../static/js/colorpush.js"></script>
+</body>
+
+</html>

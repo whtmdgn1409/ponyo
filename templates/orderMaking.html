@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>orderMaking</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            width: 1080px;
+            height: 1920px;
+            background: #F7F7F7;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/css/orderMaking.css">
+    <link rel="stylesheet" href="../static/css/titleBox.css">
+    <script src="../static/js/lottie.js"></script>
+    <!-- Material Icons CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- sound -->
+
+
+</head>
+
+<body>
+    <header>
+        <p>Travel into your daily life</p>
+        <img src="../static/img/텍스트형 LOGO1.svg" alt="">
+    </header>
+    <hr />
+    <section>
+        <audio id="aud" autoplay src="../static/sound/ES_Engraving Machine 3 - SFX Producer.mp3" type="audio/mpeg" display="none"> 브라우저가 audio
+            태그를 지원하지 않을 때 표시되는 문장 </audio>
+
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_hc3s0d2q.json" background="transparent"
+            speed="1" loop autoplay></lottie-player>
+        <img class="pli_cover" src="../static/img/lottie_1.png" alt="힙합클럽초대장">
+        <div class="order1">색상 녹이는 중.. </div>
+        <div class="order2">상황 녹이는 중...</div>
+        <div class="order3">음료 제조 중..</div>
+    </section>
+
+    <script src="../static/js/orderMaking.js"></script>
+    <script>
+        document.getElementById('aud').play();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/drselect.css">
+  <link rel="stylesheet" href="../static/css/drselect_modal.css">
+  <link rel="stylesheet" href="../static/css/component.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>PLOP_purple-drink</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <p>Travel into your daily life</p>
+      <img src="../static/img/텍스트형 LOGO1.svg" alt="">
+      <img class="backbtn" src="../static/img/backbutton.svg" alt="">
+
+    </header>
+
+    <section>
+      <div class="Content1">
+        <div class="Content-img"><img src="../static/img/playlistImg/직사각형_이미지/purple_back/purpleback_02.png"></div>
+        <!--직사각형 이미지-->
+        <div class="Content-color" style="color:#52306C; border: 3px solid #52306C">PURPLE</div>
+        <div class="Content-title">연극이 끝나고 난 뒤</div>
+        <!-- <div class="Content-price">3,500원</div> -->
+        <div class="Content-cover-img"><img src="../static/img/playlistImg/정사각형_이미지/purple_cards/purple_02.png" alt="1"></div>
+        <!--정사각형 이미지-->
+      </div>
+      <div class="Content2">
+        <div class="c_pl">
+          <div class="Content-introduce-title">STORY</div>
+          <div class="Content-introduce-text">연극이 끝나고 난 뒤, 조명이 꺼진 무대를 본 적이 있나요?<br> 관객도 주인공도 모두 떠나고 정적만이 남아있죠. 열심히 달려왔던 당신의 삶에 고독만이 남아있다고 해도 우울함에 빠질 필요는 없어요.가끔은 공허함 속에 잔잔한 여운을 느껴보세요.<br> 무대는 항상 다시 시작하고, 당신의 무대는 아직 끝이 아니니까요!</div>
+        </div>
+
+        <div class="c_dr">
+          <div class="Content-Need-drink">
+            <div class="hr-sect">SELECT DRINK</div>
+          </div>
+          <div class="Select-drink">
+            <div class="drink-box1">
+              <a href="#drink_coffee" class="drink-box">
+                <div class="boxdiv">
+                  <img src="../static/img/drink/coffee.png" alt="">
+                </div>
+                <p class="drink">COFFEE</p>
+                <p class="drink-price">3500</p>
+              </a>
+            </div>
+            <div class="drink-box2">
+              <a href="#drink_tea" class="drink-box">
+                <div class="boxdiv">
+                  <img src="../static/img/drink/tea.png" alt="">
+                </div>
+                <p class="drink">TEA</p>
+                <p class="drink-price">3500</p>
+              </a>
+            </div>
+            <div class="drink-box3">
+              <a href="#drink_ade" class="drink-box">
+                <div class="boxdiv">
+                  <img src="../static/img/drink/ade.png" alt="">
+                </div>
+                <p class="drink">ADE</p>
+                <p class="drink-price">3500</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="plbox">
+        <div class="noselect"><img src="../static/img/logo_gray.svg" alt=""></div>
+        <div class="t">메뉴를 추가해 주세요</div>
+      </div>
+      <div class="money">
+        <p style="left:40px;">총 결제금액</p>
+        <p style="right:40px;">0 원</p>
+      </div>
+      <div class="order">
+        <p>주문하기</p>
+      </div>
+    </footer>
+
+    <!-- 커피 정하기-->
+    <div id="drink_coffee" class="pop_wrap" style="display:none;">
+      <form action="POST">
+        <div class="pop_inner">
+          <div class="pop_Header">
+            <div class="pop-header">
+              <img class="pop-drink-img pop-coffee" src="../static/img/drink/coffee.png" alt="">
+              <p class="pop-drink-name">COFFEE</p>
+              <p class="pop-drink-intro">에티오피아 원두로 로스팅한 커피 <br>부드러운 쓴 맛과 견과류의 고소한 맛</p>
+              <p class="pop-drink-price">3,500원</p>
+              <div class="number-button">
+                <input type="button" class="minus" onclick='count("minus")'>
+                <div id='result'>1</div>
+                <input type="button" class="plus" onclick='count("plus")'>
+              </div>
+            </div>
+          </div>
+          <div class="pop_Content">
+            <div class="pli_cover">
+              <div class="drink-menu-correct">
+                <div class="hr1"></div>
+                <div class="drink-menu-text">메뉴</div>
+                <label>
+                  <input class="americanobtn" type="radio" name="menu" value="Americano">
+                  <p class="americanotxt">아메리카노</p>
+                </label>
+                <label>
+                  <input class="cafelattebtn" type="radio" name="menu" value="Latte">
+                  <p class="cafelattetxt">카페라떼</p>
+                </label>
+                <label>
+                  <input class="cafemocabtn" type="radio" name="menu" value="Moca">
+                  <p class="cafemocatxt">카페모카</p>
+                </label>
+              </div>
+              <div class="hr2"></div>
+              <div class="drink-temperature">
+
+                <p class="drink-temperature-title">온도</p>
+                <label>
+                  <input class="ICE-button" type="radio" name="temp" value="ICE">
+                  <p class="ICE-text">ICE</p>
+                </label>
+                <label>
+                  <input class="HOT-button" type="radio" name="temp" value="HOT">
+                  <p class="HOT-text">HOT</p>
+                </label>
+              </div>
+              <div class="drink-size">
+                <p class="drink-size-text">사이즈</p>
+                <label>
+                  <input class="drink-size-small drink-size-small-1" type="radio" name="size" value="small" />
+                  <p class="size-small-text">S </p>
+                  <p class="size-small-text-u">+0</p>
+                </label>
+                <label>
+                  <input class="drink-size-medium drink-size-medium-1" type="radio" name="size" value="medium" />
+                  <p class="medium-small-text">M </p>
+                  <p class="medium-small-text-u">+500</p>
+                </label>
+              </div>
+            </div>
+
+          </div>
+          <div class="pop_Footer">
+            <div class="drink-full-price">
+              <div>합계 금액</div>
+              <div class="drinkprice" id="totalPrice">3500</div>
+              <div>원</div>
+            </div>
+            <button type="button" class="btn_close">취소</button>
+            <button type="button" id="coffee_select" class="select_button">선택 완료</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- 티 정하기-->
+    <div id="drink_tea" class="pop_wrap" style="display:none;">
+      <form action="POST">
+        <div class="pop_inner">
+          <div class="pop_Header">
+            <div class="pop-header">
+              <img class="pop-drink-img pop-tea" src="../static/img/drink/tea.png" alt="">
+              <p class="pop-drink-name">TEA</p>
+              <p class="pop-drink-intro">최고의 환경에서 자란 찻잎을 <br>정성껏 우려낸 프리미엄 오리지널 티</p>
+              <p class="pop-drink-price">3,500원</p>
+              <div class="number-button">
+                <input type="button" class="minus" onclick='count2("minus")'>
+                <div id='result2'>1</div>
+                <input type="button" class="plus" onclick='count2("plus")'>
+              </div>
+            </div>
+          </div>
+
+          <div class="pop_Content">
+            <div class="pli_cover">
+              <div class="drink-menu-correct">
+                <div class="hr1"></div>
+                <div class="drink-menu-text">메뉴</div>
+                <label>
+                  <input class="americanobtn" type="radio" name="menu" value="Rooibos">
+                  <p class="ruibostxt">루이보스</p>
+                </label>
+                <label>
+                  <input class="cafelattebtn" type="radio" name="menu" value="EarlGrey">
+                  <p class="algraytxt">얼그레이</p>
+                </label>
+                <label>
+                  <input class="cafemocabtn" type="radio" name="menu" value="Chamomile">
+                  <p class="camomiletxt">카모마일</p>
+                </label>
+              </div>
+              <div class="hr2"></div>
+              <div class="drink-temperature">
+                <p class="drink-temperature-title">온도</p>
+                <label>
+                  <input class="ICE-button" type="radio" name="temp" value="ICE">
+                  <p class="ICE-text">ICE</p>
+                </label>
+                <label>
+                  <input class="HOT-button" type="radio" name="temp" value="HOT">
+                  <p class="HOT-text">HOT</p>
+                </label>
+              </div>
+              <div class="drink-size">
+                <p class="drink-size-text">사이즈</p>
+                <label>
+                  <input class="drink-size-small drink-size-small-2" type="radio" name="size" value="small" />
+                  <p class="size-small-text">S </p>
+                  <p class="size-small-text-u">+0</p>
+                </label>
+                <label>
+                  <input class="drink-size-medium drink-size-medium-2" type="radio" name="size" value="medium" />
+                  <p class="medium-small-text">M </p>
+                  <p class="medium-small-text-u">+500</p>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="pop_Footer">
+            <div class="drink-full-price">
+              <div>합계 금액</div>
+              <div class="drinkprice" id="totalPrice2">3500</div>
+              <div>원</div>
+            </div>
+            <button type="button" class="btn_close">취소</button>
+            <button type="button" id="coffee_select" class="select_button">선택 완료</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- 에이드 정하기 -->
+    <div id="drink_ade" class="pop_wrap" style="display:none;">
+      <form action="POST">
+        <div class="pop_inner">
+          <div class="pop_Header">
+            <div class="pop-header">
+              <img class="pop-drink-img pop-ade" src="../static/img/drink/ade.png" alt="">
+              <p class="pop-drink-name">ADE</p>
+              <p class="pop-drink-intro">상큼한 과일과 시원한 청량감을 한 번에<br>머리부터 발끝까지 시원하고 상큼한 에이드</p>
+              <p class="pop-drink-price">3,500원</p>
+              <div class="number-button">
+                <input type="button" class="minus" onclick='count3("minus")'>
+                <div id='result3'>1</div>
+                <input type="button" class="plus" onclick='count3("plus")'>
+              </div>
+            </div>
+          </div>
+          <div class="pop_Content">
+            <div class="pli_cover">
+              <div class="drink-menu-correct">
+                <div class="hr1"></div>
+                <div class="drink-menu-text">메뉴</div>
+                <label>
+                  <input class="americanobtn" type="radio" name="menu" value="Lemon">
+                  <p class="lemontxt">레몬에이드</p>
+                </label>
+                <label>
+                  <input class="cafelattebtn" type="radio" name="menu" value="GrapeFruit">
+                  <p class="gftxt">자몽에이드</p>
+                </label>
+                <label>
+                  <input class="cafemocabtn" type="radio" name="menu" value="GreenGrape">
+                  <p class="grapetxt">청포도에이드</p>
+                </label>
+              </div>
+              <div class="hr2"></div>
+              <div class="drink-temperature">
+                <p class="drink-temperature-title">온도</p>
+                <label>
+                  <input class="ICE-button" type="radio" name="temp" value="ICE">
+                  <p class="ICE-text">ICE</p>
+                </label>
+              </div>
+              <div class="drink-size">
+                <p class="drink-size-text">사이즈</p>
+                <label>
+                  <input class="drink-size-small drink-size-small-3" type="radio" name="size" value="small" />
+                  <p class="size-small-text">S </p>
+                  <p class="size-small-text-u">+0</p>
+                </label>
+                <label>
+                  <input class="drink-size-medium drink-size-medium-3" type="radio" name="size" value="medium" />
+                  <p class="medium-small-text">M </p>
+                  <p class="medium-small-text-u">+500</p>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="pop_Footer">
+            <div class="drink-full-price">
+              <div>합계 금액</div>
+              <div class="drinkprice" id="totalPrice3">3500</div>
+              <div>원</div>
+            </div>
+            <button type="button" class="btn_close">취소</button>
+            <button type="button" id="coffee_select" class="select_button">선택 완료</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <script charset="utf-8" src="../static/js/drink_modal.js"></script>
+  <script charset="utf-8" src="../static/js/drinknumber.js"></script>
+
+  <script charset="utf-8" src="../static/js/dataPush.js"></script>
+</body>
+
+</html>
